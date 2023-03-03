@@ -83,6 +83,7 @@ window:
   # Number of lines the viewport will move for every line scrolled when
   # scrollback is enabled (history > 0).
   #multiplier: 3
+
 # Font configuration
 font:
   # Normal (roman) font face
@@ -142,44 +143,31 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 # Colors (Tomorrow Night Bright)
-# colors:
+colors:
+  name: vscode (dark)
+  author: senpai-10
   primary:
-    background: "0x191724"
-    foreground: "0xe0def4"
+    background: "#1E1E1E"
+    foreground: "#D4D4D4"
   cursor:
-    text: "0xe0def4"
-    cursor: "0x524f67"
-  vi_mode_cursor:
-    text: "0xe0def4"
-    cursor: "0x524f67"
-  line_indicator:
-    foreground: None
-    background: None
-  selection:
-    text: "0xe0def4"
-    background: "0x403d52"
+    text: "#1d1f21"
+    cursor: "#cccccc"
   normal:
-    black: "0x26233a"
-    red: "0xeb6f92"
-    green: "0x31748f"
-    yellow: "0xf6c177"
-    blue: "0x9ccfd8"
-    magenta: "0xc4a7e7"
-    cyan: "0xebbcba"
-    white: "0xe0def4"
+    black: "#000000"
+    red: "#cd3131"
+    green: "#0dbc79"
+    yellow: "#e5e510"
+    blue: "#2472c8"
+    magenta: "#bc3fbc"
+    cyan: "#11a8cd"
+    white: "#e5e5e5"
   bright:
-    black: "0x6e6a86"
-    red: "0xeb6f92"
-    green: "0x31748f"
-    yellow: "0xf6c177"
-    blue: "0x9ccfd8"
-    magenta: "0xc4a7e7"
-    cyan: "0xebbcba"
-    white: "0xe0def4"
-  hints:
-    start:
-      foreground: "#908caa"
-      background: "#1f1d2e"
-    end:
-      foreground: "#6e6a86"
-      background: "#1f1d2e"
+    black: "#666666"
+    red: "#f14c4c"
+    green: "#23d18b"
+    yellow: "#f5f543"
+    blue: "#3b8eea"
+    magenta: "#d670d6"
+    cyan: "#29b8db"
+    white: "#e5e5e5"
+theme: vscode.dark

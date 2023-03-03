@@ -13,12 +13,12 @@ env:
   TERM: alacritty
   LANG: "en_US.UTF-8"
   LC_CTYPE: en_US.UTF-8
+  #window:
   # Window background opacity
-window:
-  opacity: 0.8
-  decorations: none
+  #
   # Specified in floating number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
+  #opacity: 1.0
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
@@ -60,9 +60,8 @@ window:
   #   - Fullscreen
   #
   # Values for `startup_mode` (macOS only):
-  #
   #   - SimpleFullscreen
-  startup_mode: Fullscreen
+  #startup_mode: Windowed
   # Window title
   #title: Alacritty
   # Window class (Linux/BSD only):
@@ -83,6 +82,7 @@ window:
   # Number of lines the viewport will move for every line scrolled when
   # scrollback is enabled (history > 0).
   #multiplier: 3
+
 # Font configuration
 font:
   # Normal (roman) font face
@@ -126,7 +126,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 17.0
+  size: 11.0
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   #offset:
@@ -142,44 +142,31 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 # Colors (Tomorrow Night Bright)
-# colors:
+colors:
+  name: Pretty and Pastel
+  author: IWAFU
   primary:
-    background: "0x191724"
-    foreground: "0xe0def4"
+    background: "#151515"
+    foreground: "#888888"
   cursor:
-    text: "0xe0def4"
-    cursor: "0x524f67"
-  vi_mode_cursor:
-    text: "0xe0def4"
-    cursor: "0x524f67"
-  line_indicator:
-    foreground: None
-    background: None
-  selection:
-    text: "0xe0def4"
-    background: "0x403d52"
+    text: "#151515"
+    cursor: "#888888"
   normal:
-    black: "0x26233a"
-    red: "0xeb6f92"
-    green: "0x31748f"
-    yellow: "0xf6c177"
-    blue: "0x9ccfd8"
-    magenta: "0xc4a7e7"
-    cyan: "0xebbcba"
-    white: "0xe0def4"
+    black: "#292929"
+    red: "#CF6A4C"
+    green: "#19CB00"
+    yellow: "#FAD07A"
+    blue: "#8197BF"
+    magenta: "#8787AF"
+    cyan: "#668799"
+    white: "#888888"
   bright:
-    black: "0x6e6a86"
-    red: "0xeb6f92"
-    green: "0x31748f"
-    yellow: "0xf6c177"
-    blue: "0x9ccfd8"
-    magenta: "0xc4a7e7"
-    cyan: "0xebbcba"
-    white: "0xe0def4"
-  hints:
-    start:
-      foreground: "#908caa"
-      background: "#1f1d2e"
-    end:
-      foreground: "#6e6a86"
-      background: "#1f1d2e"
+    black: "#525252"
+    red: "#FF9D80"
+    green: "#23FD00"
+    yellow: "#FFEFBF"
+    blue: "#ACCAFF"
+    magenta: "#C4C4FF"
+    cyan: "#80BFAF"
+    white: "#E8E8D3"
+theme: Pretty-and-pastel
